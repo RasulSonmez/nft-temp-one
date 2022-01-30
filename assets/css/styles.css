@@ -329,6 +329,8 @@ img {
   color: var(--color-white);
   -webkit-transition: 300ms all;
   transition: 300ms all;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .nav__link:hover {
@@ -376,6 +378,12 @@ img {
   height: 1.25rem;
   width: 1.25rem;
   margin-left: 0.5rem;
+}
+
+.active-link {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 1px solid var(--color-purple);
 }
 
 /* HERO */
