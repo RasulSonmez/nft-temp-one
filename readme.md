@@ -10,7 +10,7 @@
 - Developed first with the Mobile First methodology, then for desktop.
 - It contains a Header, Home, Colleaction,Featured Artworks, Top Creator, FAQ and Footer.
 
-### [Live Website](https://hallowen-temp-rs.netlify.app/)
+### [Live Website](https://nft-temp-one-rasulsonmez.netlify.app/)
 
 ## Used packages cdn
 
