@@ -516,7 +516,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 7rem 0 7rem !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 17rem;
   height: 40px;
   background-color: var(--bg-color-one);
 }
@@ -747,6 +750,8 @@ img {
   text-align: center;
   place-items: center;
   padding: 4rem;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
 }
 
 .banner__button {
@@ -967,7 +972,7 @@ img {
 }
 
 .active-btn {
-  background-color: var(--color-purple);
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
 }
 
 /* FOOTER */
@@ -1045,5 +1050,13 @@ img {
   font-size: var(--normal-font-size);
   margin-top: 4.5rem;
   color: var(--text-color);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+  body {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
