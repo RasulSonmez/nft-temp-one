@@ -11,6 +11,7 @@
     background-image: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
     z-index: 1;
     padding: 0.7rem 1.25rem 0.7rem 1.25rem;
+    font-size: var(--normal-font-size);
     &::after {
       position: absolute;
       content: "";
@@ -32,6 +33,7 @@
     background: var(--text-color);
     padding: 0.7rem 1.25rem 0.7rem 1.25rem;
     transition: 300ms all;
+    font-size: var(--normal-font-size);
     &:hover {
       background-color: var(--color-purple);
     }

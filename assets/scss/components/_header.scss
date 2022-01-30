@@ -66,6 +66,19 @@
       margin-left: 0.5rem;
     }
   }
+
+  &__close {
+    display: none;
+  }
+
+  &__icon-wallet {
+    display: none;
+  }
+}
+
+/* Show menu */
+.show-menu {
+  top: 4rem !important;
 }
 
 .active-link {

@@ -1,12 +1,158 @@
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
-  body {
+  body,
+  .banner__container,
+  .nav {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
 }
 
 @media screen and (max-width: 992px) {
+  .nav {
+    &__list {
+      display: flex;
+    }
+    &__item {
+      &:last-child {
+        display: none !important;
+      }
+    }
+    &__icon-wallet {
+      display: block;
+      fill: var(--color-white);
+    }
+    &__search {
+      input {
+        padding: 0 0.4rem 0 2rem;
+        margin-right: 0;
+        &::placeholder {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+  .hero {
+    &__content {
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+      place-items: center;
+    }
+  }
+
+  .cardOne {
+    &__img {
+      height: auto;
+    }
+    &__name,
+    &__price {
+      font-size: var(--normal-font-size);
+    }
+  }
 }
 @media screen and (max-width: 768px) {
+  .nav {
+    &__menu {
+      position: fixed;
+      width: 90%;
+      background: var(--container-color);
+      top: -150%;
+      padding: 3.5rem 0;
+      transition: 0.4s;
+      z-index: var(--z-fixed);
+      border-radius: 1rem;
+      background: var(--body-color);
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1.5rem;
+    }
+    &__search {
+      input {
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        margin-right: 0;
+      }
+    }
+    &__toggle {
+      display: block;
+      fill: var(--color-white);
+      cursor: pointer;
+    }
+
+    &__close {
+      display: block;
+      font-size: 1.8rem;
+      position: absolute;
+      top: 0.5rem;
+      right: 0.7rem;
+      cursor: pointer;
+      fill: var(--color-white);
+    }
+  }
+
+  .about {
+    &__item {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .colleaction {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .questions {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+  .footer {
+    &__content {
+      &:first-child {
+        text-align: center;
+      }
+    }
+    &__social {
+      justify-content: center;
+    }
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav {
+    &__search {
+      margin: 0 1rem;
+    }
+  }
+  .about {
+    &__item {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .colleaction {
+    &__head {
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .footer {
+    &__content {
+      text-align: center;
+    }
+
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
 }

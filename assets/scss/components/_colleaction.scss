@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: var(--mb-2);
+    column-gap: 2rem;
   }
   &__btn {
     display: flex;
@@ -16,6 +17,7 @@
     width: 17rem;
     height: 40px;
     background-color: var(--bg-color-one);
+    font-size: var(--normal-font-size);
     &:hover {
       background-color: var(--color-purple);
     }
