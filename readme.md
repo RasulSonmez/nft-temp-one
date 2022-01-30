@@ -2,7 +2,7 @@
 
 <hr/>
 
-## HNFT Marketplace Website
+## NFT Marketplace Website
 
 - NFT Marketplace Website, using HTML, Sass and JavaScript.
 - Color customization.
