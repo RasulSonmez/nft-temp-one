@@ -1,0 +1,96 @@
+/* COLLEACTİON */
+.colleaction {
+  &__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--mb-2);
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    padding: 0 7rem 0 7rem !important;
+    height: 40px;
+    background-color: var(--bg-color-one);
+    &:hover {
+      background-color: var(--color-purple);
+    }
+  }
+  &__item {
+    background-color: var(--bg-color-one);
+    padding: 26px;
+    border-radius: 0.5rem;
+    transition: all 200ms ease-in;
+    &:hover {
+      background-color: var(--text-color);
+      z-index: 2;
+      transform: scale(1.1);
+    }
+  }
+  &__img {
+    height: 380px;
+  }
+  &__details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+
+    &-sub {
+      margin-top: 1rem;
+      font-size: var(--small-font-size);
+      text-align: right;
+    }
+  }
+  &__price {
+    font-size: var(--h2-font-size);
+  }
+  &__name {
+    font-size: var(--h2-font-size);
+  }
+  &__button {
+    width: 100%;
+    margin-top: var(--mb-2);
+  }
+}
+
+/*  Needed for filters */
+
+.hide {
+  /* You can play with the seconds to change the "animation" */
+  animation: hide 0.5s ease 0s 1 normal forwards;
+  transform-origin: center;
+  display: none;
+}
+.show {
+  /* You can play with the seconds to change the "animation" */
+  animation: show 0.5s ease 0s 1 normal forwards;
+  transform-origin: center;
+  display: block;
+}
+
+@keyframes hide {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+}
+@keyframes show {
+  0% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}

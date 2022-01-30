@@ -1,0 +1,50 @@
+/* QUESTIONS */
+.questions {
+  &__container {
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+  }
+  &__group {
+    display: grid;
+    row-gap: 2rem;
+  }
+  &__item {
+    transition: 0.3s;
+    background-color: var(--container-color);
+    border-radius: 0.25rem;
+    border-bottom: 1px solid var(--text-color);
+  }
+  &__item-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+  }
+
+  &__description {
+    font-size: var(--small-font-size);
+    padding: 0 1.25rem 1.25rem 2.5rem;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.75rem 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  &__content {
+    overflow: hidden;
+    height: 0;
+    color: var(--color-white);
+    line-height: 2rem;
+    transition: 0.3s;
+  }
+}
+
+/*Rotate icon and add font weight to titles*/
+.accordion-open {
+  & .questions__icon {
+    transform: rotate(45deg);
+  }
+}

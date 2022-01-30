@@ -1,0 +1,43 @@
+/* BUTTONS */
+.button {
+  color: var(--color-white);
+  border-radius: 0.625rem;
+  transition: 300ms all;
+  font-size: var(--h2-font-size);
+  cursor: pointer;
+
+  &__first {
+    position: relative;
+    background-image: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+    z-index: 1;
+    padding: 0.7rem 1.25rem 0.7rem 1.25rem;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.3em;
+      background-image: linear-gradient(to left, #ffff80, #34343600);
+      transition: opacity 0.5s ease-out;
+      z-index: 2;
+      opacity: 0;
+    }
+    &:hover:after {
+      opacity: 1;
+    }
+  }
+  &__second {
+    background: var(--text-color);
+    padding: 0.7rem 1.25rem 0.7rem 1.25rem;
+    transition: 300ms all;
+    &:hover {
+      background-color: var(--color-purple);
+    }
+  }
+}
+
+.active-btn {
+  background-color: var(--color-purple);
+}

@@ -1,0 +1,55 @@
+/* BANNER */
+.banner {
+  &__container {
+    background: linear-gradient(270deg, #b75cff, #671ae4);
+    background-size: 400% 400%;
+    -webkit-animation: bannerAnime1 15s ease infinite;
+    -moz-animation: bannerAnime2 15s ease infinite;
+    animation: bannerAnime3 15s ease infinite;
+    border-radius: 0.5rem;
+    text-align: center;
+    place-items: center;
+    padding: 4rem;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 2rem;
+  }
+}
+
+@-webkit-keyframes bannerAnime1 {
+  0% {
+    background-position: 0% 53%;
+  }
+  50% {
+    background-position: 100% 48%;
+  }
+  100% {
+    background-position: 0% 53%;
+  }
+}
+@-moz-keyframes bannerAnime2 {
+  0% {
+    background-position: 0% 53%;
+  }
+  50% {
+    background-position: 100% 48%;
+  }
+  100% {
+    background-position: 0% 53%;
+  }
+}
+@keyframes bannerAnime3 {
+  0% {
+    background-position: 0% 53%;
+  }
+  50% {
+    background-position: 100% 48%;
+  }
+  100% {
+    background-position: 0% 53%;
+  }
+}

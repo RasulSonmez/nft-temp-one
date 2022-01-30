@@ -1,0 +1,17 @@
+/* FEATURED */
+.custom-swiper {
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.custom-slide {
+  background-position: center;
+  background-size: cover;
+  width: 383px;
+  filter: blur(2px);
+}
+
+.swiper-slide-active {
+  filter: blur(0);
+}
